@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  profiles:
+    active: ${SCOPE_SUFFIX} # Comma-separated list of active profiles. Can be overridden by a command line switch.
+  mvc:
+    throw-exception-if-no-handler-found: true # Whether a "NoHandlerFoundException" should be thrown if no Handler was found to process a request.
+  web:
+    resources:
+      add-mappings: false
+
+app:
+  title: ClinicaDelCalzado-BackEnd
